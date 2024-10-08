@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #120323;
+    color: #97bf04;
+    text-align: center;
+    padding: 20px;
+}
+header img {
+    width: 100px;
+}
+h1 {
+    margin: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 3;
+}
+aside {
+    background-color: #97bf04;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer {
+    background-color: #d9043d;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+figure {
+    margin: 0;
+    text-align:left;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+figcaption {
+    margin-top: 10px;
+}
+
+@media screen and  (max-width: 767px) {
+    header img {
+        display: block;
+        margin: 0 auto;
+    }
+    header h1 {
+        display: block;
+    }
+    #container {
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 20px;
+    }
+    figure img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    #container {
+        flex-direction: column;
+    }
+    figure {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    figure img {
+        max-width: 300px;
+        height: auto;
+    }
+    aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row;
+    }
+    main {
+        flex: 3;
+        padding-right: 20px;
+    }
+    aside {
+        flex: 1;
+        background-color: #97bf04;
+        padding: 10px;
+    }
+    figure img {
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
+    figure {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    figcaption {
+        margin-left: 20px;
+    }
+}
+
